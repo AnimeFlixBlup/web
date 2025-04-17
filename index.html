@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="IMAGE/logosn.jpg" type="image/png">
+</head>
+<body>
+    <!-- Login Page -->
+    <div class="login-container" id="loginPage">
+        <div class="login-form-container">
+            <div class="logo">Anime<span>Flix</span></div>
+            <h1>Iniciar Sesión</h1>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" class="form-input" id="loginEmail" placeholder="Email o número de teléfono" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-input" id="loginPassword" placeholder="Contraseña" required>
+                </div>
+                <div class="error-message" id="loginError"></div>
+                <button type="submit" class="form-btn">Iniciar Sesión</button>
+                <div class="switch-form">
+                    ¿Nuevo en AnimeFlix?<a href="#" id="showRegister">Suscríbete ahora</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Register Page -->
+    <div class="login-container" id="registerPage" style="display: none;">
+        <div class="login-form-container">
+            <div class="logo">Anime<span>Flix</span></div>
+            <h1>Crear Cuenta</h1>
+            <form id="registerForm">
+                <div class="input-group">
+                    <input type="text" class="form-input" id="registerName" placeholder="Nombre completo" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="form-input" id="registerEmail" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-input" id="registerPassword" placeholder="Contraseña" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="form-input" id="confirmPassword" placeholder="Confirmar contraseña" required>
+                </div>
+                <div class="error-message" id="registerError"></div>
+                <button type="submit" class="form-btn">Registrarse</button>
+                <div class="switch-form">
+                    ¿Ya tienes cuenta? <a href="#" id="showLogin">Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Home Page -->
+    <div class="home-container" id="homePage">
+        <header>
+            <div class="logo">Anime<span>Flix</span></div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="#">Películas</a></li>
+                <li><a href="#">Mi Lista</a></li>
+                <li><a href="#" id="logoutBtn">Cerrar Sesión</a></li>
+            </ul>
+        </header>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Demon Slayer</h2>
+                <p>Tanjiro emprende un viaje arriesgado para buscar una cura para su hermana y vengar a su familia.</p>
+               <a href="https://ww3.animeonline.ninja/episodio/kimetsu-no-yaiba-cap-1/"> <button class="hero-btn">Reproducir</button></a>
+            </div>
+        </section>
+        
+        <section class="anime-grid">
+            <h3 class="section-title">Populares en AnimeFlix</h3>
+            <div class="anime-row">
+                <a href="https://ww3.animeonline.ninja/episodio/shingeki-no-kyojin-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/attack.avif" alt="Anime 1">
+                    <div class="title">Attack on Titan</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/boku-no-hero-academia-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/hero.avif" alt="Anime 2">
+                    <div class="title">My Hero Academia</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/jujutsu-kaisen-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/juju.jpg" alt="Anime 3">
+                    <div class="title">Jujutsu Kaisen</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/one-piece-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/Arco_de_Egghead.webp" alt="Anime 4">
+                    <div class="title">One Piece</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/tokyo-revengers-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/tokio.jpg" alt="Anime 5">
+                    <div class="title">Tokyo Revengers</div>
+                </div>
+            </div>
+        </a>
+            
+            <h3 class="section-title">Películas de Anime</h3>
+            <div class="anime-row">
+                <a href="https://ww3.animeonline.ninja/pelicula/kimi-no-na-wa-your-name-091324/">
+                <div class="anime-card">
+                    <img src="IMAGE/name.jpg" alt="Movie 1">
+                    <div class="title">Your Name</div>
+                </div>
+            </a>
+                <a href="https://ww3.animeonline.ninja/pelicula/violet-evergarden-the-movie-8/">
+                <div class="anime-card">
+                    <img src="IMAGE/ve.webp" alt="Movie 2">
+                    <div class="title">Violet Evergarden</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/pelicula/tenki-no-ko-weathering-with-you-4/">
+                <div class="anime-card">
+                    <img src="IMAGE/you.jpg" alt="Movie 3">
+                    <div class="title">Weathering With You</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/pelicula/kimetsu-no-yaiba-movie-mugen-ressha-hen-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/train.jpg" alt="Movie 4">
+                    <div class="title">Demon Slayer: Mugen Train</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/pelicula/koe-no-katachi-100524/">
+                <div class="anime-card">
+                    <img src="IMAGE/voice.jpg" alt="Movie 5">
+                    <div class="title">A Silent Voice</div>
+                </div>
+            </div>
+        </a>
+            
+            <h3 class="section-title">Nuevo en AnimeFlix</h3>
+            <div class="anime-row">
+                <a href="https://ww3.animeonline.ninja/episodio/chainsaw-man-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/man.jpg" alt="New 1">
+                    <div class="title">Chainsaw Man</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/spyxfamily-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/spy.webp" alt="New 2">
+                    <div class="title">Spy x Family</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/blue-lock-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/blue.jpg" alt="New 3">
+                    <div class="title">Blue Lock</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/dandadan-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/dan.jpg" alt="New 4">
+                    <div class="title">DanDaDan</div>
+                </div>
+            </a>
+            <a href="https://ww3.animeonline.ninja/episodio/ore-dake-level-up-na-ken-solo-leveling-cap-1/">
+                <div class="anime-card">
+                    <img src="IMAGE/solo.webp" alt="New 5">
+                    <div class="title">Solo Leveling</div>
+                </div>
+            </a>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 AnimeFlix. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
